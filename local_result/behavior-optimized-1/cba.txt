@@ -1,0 +1,161 @@
+Analyzing build trace from '/output/runs/behavior-optimized-1/cba.bin'...
+**** Time summary:
+Compilation (2 times):
+  Parsing (frontend):            4.1 s
+  Codegen & opts (backend):      0.4 s
+
+**** Files that took longest to parse (compiler frontend):
+  3278 ms: /output/build-optimized/CMakeFiles/service_template_objs.dir/src/hello_grpc.cpp.o
+   842 ms: /output/build-optimized/CMakeFiles/service_template_objs.dir/src/greeting.cpp.o
+
+**** Files that took longest to codegen (compiler backend):
+   389 ms: /output/build-optimized/CMakeFiles/service_template_objs.dir/src/hello_grpc.cpp.o
+    38 ms: /output/build-optimized/CMakeFiles/service_template_objs.dir/src/greeting.cpp.o
+
+**** Templates that took longest to instantiate:
+   215 ms: userver::components::ComponentList::Append<service_template::HelloGr... (2 times, avg 107 ms)
+    86 ms: std::make_unique<const userver::components::impl::ComponentAdder<ser... (1 times, avg 86 ms)
+    84 ms: userver::components::impl::ComponentAdder<service_template::HelloGrp... (1 times, avg 84 ms)
+    65 ms: userver::components::impl::ComponentAdder<service_template::HelloGrp... (1 times, avg 65 ms)
+    65 ms: userver::components::impl::TryValidateStaticConfig<service_template:... (1 times, avg 65 ms)
+    31 ms: std::variant<std::basic_string<char>, int, bool, long, long long, un... (1 times, avg 31 ms)
+    24 ms: fmt::basic_format_string<char, std::basic_string_view<char> &>::basi... (1 times, avg 24 ms)
+    23 ms: fmt::basic_format_string<char, const std::basic_string<char> &>::bas... (1 times, avg 23 ms)
+    22 ms: fmt::formatter<fmt::basic_string_view<char>>::parse<fmt::detail::com... (2 times, avg 11 ms)
+    21 ms: std::__detail::__variant::_Variant_base<std::basic_string<char>, int... (1 times, avg 21 ms)
+    20 ms: fmt::detail::format_string_checker<char, fmt::detail::error_handler,... (1 times, avg 20 ms)
+    19 ms: fmt::detail::parse_format_specs<std::basic_string_view<char>, fmt::d... (1 times, avg 19 ms)
+    19 ms: std::reverse_iterator<std::_Bit_iterator> (1 times, avg 19 ms)
+    19 ms: userver::middlewares::RunnerComponentBase<userver::ugrpc::server::Mi... (1 times, avg 19 ms)
+    19 ms: fmt::detail::format_string_checker<char, fmt::detail::error_handler,... (1 times, avg 19 ms)
+    19 ms: fmt::detail::parse_format_specs<std::basic_string<char>, fmt::detail... (1 times, avg 19 ms)
+    18 ms: userver::components::impl::ComponentAdder<service_template::HelloGrp... (1 times, avg 18 ms)
+    18 ms: std::optional<std::unordered_map<std::basic_string<char>, userver::y... (1 times, avg 18 ms)
+    15 ms: fmt::detail::parse_format_specs<char, fmt::detail::specs_checker<fmt... (2 times, avg 7 ms)
+    15 ms: boost::container::flat_map<grpc::StatusCode, userver::logging::Level> (1 times, avg 15 ms)
+    15 ms: std::__detail::__variant::_Move_assign_base<false, bool, userver::ya... (1 times, avg 15 ms)
+    14 ms: std::reverse_iterator<std::_Bit_const_iterator> (1 times, avg 14 ms)
+    14 ms: std::unique_ptr<userver::components::RawComponentBase> (1 times, avg 14 ms)
+    13 ms: std::make_tuple<google::protobuf::Arena *&, int &, int &, google::pr... (1 times, avg 13 ms)
+    12 ms: std::optional<std::variant<bool, userver::yaml_config::SchemaPtr>> (1 times, avg 12 ms)
+    12 ms: std::__detail::__variant::__raw_idx_visit<(lambda at /usr/include/c+... (1 times, avg 12 ms)
+    12 ms: userver::ugrpc::server::Result<handlers::api::HelloResponse>::Result (1 times, avg 12 ms)
+    12 ms: std::__do_visit<std::__detail::__variant::__variant_idx_cookie, (lam... (1 times, avg 12 ms)
+    12 ms: std::is_trivially_copy_constructible<std::unordered_map<std::basic_s... (1 times, avg 12 ms)
+    12 ms: std::unique_ptr<const userver::components::impl::ComponentAdder<serv... (1 times, avg 12 ms)
+
+**** Template sets that took longest to instantiate:
+   198 ms: std::unique_ptr<$> (19 times, avg 10 ms)
+   160 ms: std::__uniq_ptr_data<$> (19 times, avg 8 ms)
+   158 ms: std::__uniq_ptr_impl<$> (19 times, avg 8 ms)
+   115 ms: std::__and_<$> (121 times, avg 0 ms)
+   108 ms: userver::components::ComponentList::Append<$> (1 times, avg 108 ms)
+    86 ms: std::make_unique<$> (1 times, avg 86 ms)
+    84 ms: userver::components::impl::ComponentAdder<$>::ComponentAdder (1 times, avg 84 ms)
+    83 ms: std::tuple<$> (21 times, avg 3 ms)
+    65 ms: userver::components::impl::ComponentAdder<$>::ValidateStaticConfig (1 times, avg 65 ms)
+    65 ms: userver::components::impl::TryValidateStaticConfig<$> (1 times, avg 65 ms)
+    63 ms: std::optional<$> (10 times, avg 6 ms)
+    54 ms: std::_Hashtable<$> (9 times, avg 6 ms)
+    51 ms: std::_TupleConstraints<$>::__is_implicitly_constructible<$> (43 times, avg 1 ms)
+    48 ms: std::unordered_map<$> (5 times, avg 9 ms)
+    47 ms: fmt::basic_format_string<$>::basic_format_string<$> (2 times, avg 23 ms)
+    45 ms: std::variant<$> (3 times, avg 15 ms)
+    41 ms: std::copy<$> (19 times, avg 2 ms)
+    39 ms: fmt::detail::format_string_checker<$>::format_string_checker (2 times, avg 19 ms)
+    38 ms: fmt::detail::parse_format_specs<$> (2 times, avg 19 ms)
+    37 ms: std::__do_visit<$> (4 times, avg 9 ms)
+    35 ms: std::is_trivially_destructible<$> (30 times, avg 1 ms)
+    35 ms: std::__copy_move_a<$> (15 times, avg 2 ms)
+    35 ms: std::reverse_iterator<$> (3 times, avg 11 ms)
+    32 ms: std::__detail::__variant::__gen_vtable_impl<$>::_S_apply (4 times, avg 8 ms)
+    31 ms: __gnu_cxx::char_traits<$>::move (10 times, avg 3 ms)
+    30 ms: std::common_reference<$> (46 times, avg 0 ms)
+    30 ms: std::is_move_constructible<$> (29 times, avg 1 ms)
+    30 ms: std::__detail::__variant::__gen_vtable_impl<$>::_S_apply_all_alts<$> (4 times, avg 7 ms)
+    30 ms: std::__detail::__variant::_Variant_base<$> (3 times, avg 10 ms)
+    30 ms: std::pair<$> (21 times, avg 1 ms)
+
+**** Functions that took longest to compile:
+     3 ms: userver::v3_3_rc::middlewares::RunnerComponentBase<userver::v3_3_rc:... (/output/optimized/service_template/src/hello_grpc.cpp)
+     3 ms: service_template::SayHelloTo[abi:cxx11](std::basic_string_view<char,... (/output/optimized/service_template/src/greeting.cpp)
+     3 ms: void std::vector<std::shared_ptr<userver::v3_3_rc::ugrpc::server::Mi... (/output/optimized/service_template/src/hello_grpc.cpp)
+     3 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (/output/optimized/service_template/src/hello_grpc.cpp)
+     2 ms: std::vector<std::shared_ptr<userver::v3_3_rc::ugrpc::server::Middlew... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::shared_ptr<userver::v3_3_rc::ugrpc::server::MiddlewareBase cons... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: fmt::v8::format_arg_store<fmt::v8::basic_format_context<fmt::v8::app... (/output/optimized/service_template/src/greeting.cpp)
+     1 ms: service_template::HelloGrpc::SayHello(userver::v3_3_rc::ugrpc::serve... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: void userver::v3_3_rc::components::impl::TryValidateStaticConfig<ser... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: __cxx_global_var_init (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)2>::_M_release() (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<ch... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: fmt::v8::detail::value<fmt::v8::basic_format_context<fmt::v8::append... (/output/optimized/service_template/src/greeting.cpp)
+     1 ms: userver::v3_3_rc::components::ComponentList& userver::v3_3_rc::compo... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: userver::v3_3_rc::yaml_config::Schema::operator=(userver::v3_3_rc::y... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<ch... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (/output/optimized/service_template/src/greeting.cpp)
+     1 ms: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<ch... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<ch... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: void std::__cxx11::basic_string<char, std::char_traits<char>, std::a... (/output/optimized/service_template/src/greeting.cpp)
+     1 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: handlers::api::HelloResponse::operator=(handlers::api::HelloResponse... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<ch... (/output/optimized/service_template/src/hello_grpc.cpp)
+     1 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (/output/optimized/service_template/src/hello_grpc.cpp)
+     0 ms: void std::__cxx11::basic_string<char, std::char_traits<char>, std::a... (/output/optimized/service_template/src/hello_grpc.cpp)
+     0 ms: std::_Optional_payload_base<userver::v3_3_rc::yaml_config::SchemaPtr... (/output/optimized/service_template/src/hello_grpc.cpp)
+     0 ms: std::__detail::__variant::_Move_assign_base<false, bool, userver::v3... (/output/optimized/service_template/src/hello_grpc.cpp)
+     0 ms: userver::v3_3_rc::components::impl::ComponentAdder<service_template:... (/output/optimized/service_template/src/hello_grpc.cpp)
+
+**** Function sets that took longest to compile / optimize:
+     4 ms: std::_Optional_payload_base<$>::_M_move_assign(std::_Optional_payloa... (5 times, avg 0 ms)
+     3 ms: userver::v3_3_rc::middlewares::RunnerComponentBase<$>::CreateMiddlew... (1 times, avg 3 ms)
+     3 ms: service_template::SayHelloTo[abi:cxx11](std::basic_string_view<$>, s... (1 times, avg 3 ms)
+     3 ms: void std::vector<$>::_M_realloc_insert<$>(__gnu_cxx::__normal_iterat... (1 times, avg 3 ms)
+     3 ms: std::__cxx11::basic_string<$>::_M_replace(unsigned long, unsigned lo... (1 times, avg 3 ms)
+     2 ms: std::unique_ptr<$>::~unique_ptr() (4 times, avg 0 ms)
+     2 ms: std::_Hashtable<$>::_Hashtable(std::_Hashtable<$>&&, std::allocator<... (2 times, avg 1 ms)
+     2 ms: std::_Hashtable<$>::_M_move_assign(std::_Hashtable<$>&&, std::integr... (2 times, avg 1 ms)
+     2 ms: std::vector<$>::reserve(unsigned long) (1 times, avg 2 ms)
+     2 ms: void std::__cxx11::basic_string<$>::_M_construct<$>(char const*, cha... (2 times, avg 1 ms)
+     1 ms: std::shared_ptr<$>& std::vector<$>::emplace_back<$>(std::shared_ptr<... (1 times, avg 1 ms)
+     1 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (1 times, avg 1 ms)
+     1 ms: std::__cxx11::basic_string<$>::basic_string<$>(char const*, std::all... (2 times, avg 0 ms)
+     1 ms: fmt::v8::format_arg_store<$> fmt::v8::make_format_args<$>(std::basic... (1 times, avg 1 ms)
+     1 ms: void userver::v3_3_rc::components::impl::TryValidateStaticConfig<$>(... (1 times, avg 1 ms)
+     1 ms: std::__cxx11::basic_string<$>::_M_set_length(unsigned long) (2 times, avg 0 ms)
+     1 ms: std::__cxx11::basic_string<$>::_M_mutate(unsigned long, unsigned lon... (1 times, avg 1 ms)
+     1 ms: __gnu_cxx::char_traits<$>::length(char const*) (2 times, avg 0 ms)
+     1 ms: std::_Sp_counted_base<$>::_M_release() (1 times, avg 1 ms)
+     1 ms: fmt::v8::detail::value<$> fmt::v8::detail::make_arg<$>(std::basic_st... (1 times, avg 1 ms)
+     1 ms: std::_Hashtable<$>::_M_update_bbegin() (2 times, avg 0 ms)
+     1 ms: std::_Hashtable<$>::_Hashtable(std::_Hashtable<$>&&) (2 times, avg 0 ms)
+     1 ms: userver::v3_3_rc::components::ComponentList& userver::v3_3_rc::compo... (1 times, avg 1 ms)
+     1 ms: std::__detail::_Hash_code_base<$>::_M_bucket_index(std::__detail::_H... (2 times, avg 0 ms)
+     1 ms: std::__cxx11::basic_string<$> fmt::v8::format<$>(fmt::v8::basic_form... (1 times, avg 1 ms)
+     1 ms: std::__detail::__variant::_Variant_storage<$>::_M_reset() (2 times, avg 0 ms)
+     1 ms: std::__cxx11::basic_string<$>::_M_create(unsigned long&, unsigned lo... (2 times, avg 0 ms)
+     1 ms: std::_Hashtable<$>::clear() (2 times, avg 0 ms)
+     1 ms: std::__detail::_Hashtable_alloc<$>::_M_deallocate_buckets(std::__det... (2 times, avg 0 ms)
+     1 ms: std::_Hashtable<$>::_M_reset() (1 times, avg 1 ms)
+
+**** Expensive headers:
+2585 ms: /output/optimized/service_template/src/hello_grpc.hpp (included 1 times, avg 2585 ms), included via:
+  1x: <direct include>
+
+640 ms: /usr/include/fmt/format.h (included 2 times, avg 320 ms), included via:
+  1x: <direct include>
+  1x: hello_grpc.hpp component.hpp component_config.hpp yaml_config.hpp common.hpp 
+
+328 ms: /output/optimized/service_template/src/greeting.hpp (included 1 times, avg 328 ms), included via:
+  1x: <direct include>
+
+30 ms: /output/optimized/service_template/src/hello_grpc_registration.hpp (included 1 times, avg 30 ms), included via:
+  1x: <direct include>
+
+14 ms: /usr/include/userver/utils/assert.hpp (included 2 times, avg 7 ms), included via:
+  1x: hello_grpc.hpp component.hpp component_config.hpp yaml_config.hpp common.hpp from_string_saturating.hpp cpp_20_calendar.hpp 
+  1x: <direct include>
+
+  done in 0.0s.

@@ -1,0 +1,111 @@
+Analyzing build trace from '/output/runs/greeting-optimized-1/cba.bin'...
+**** Time summary:
+Compilation (1 times):
+  Parsing (frontend):            0.8 s
+  Codegen & opts (backend):      0.0 s
+
+**** Files that took longest to parse (compiler frontend):
+   832 ms: /output/build-optimized/CMakeFiles/service_template_objs.dir/src/greeting.cpp.o
+
+**** Files that took longest to codegen (compiler backend):
+    39 ms: /output/build-optimized/CMakeFiles/service_template_objs.dir/src/greeting.cpp.o
+
+**** Templates that took longest to instantiate:
+    22 ms: fmt::basic_format_string<char, std::basic_string_view<char> &>::basi... (1 times, avg 22 ms)
+    19 ms: fmt::detail::format_string_checker<char, fmt::detail::error_handler,... (1 times, avg 19 ms)
+    19 ms: fmt::detail::parse_format_specs<std::basic_string_view<char>, fmt::d... (1 times, avg 19 ms)
+    11 ms: fmt::formatter<fmt::basic_string_view<char>>::parse<fmt::detail::com... (1 times, avg 11 ms)
+     7 ms: fmt::detail::parse_format_specs<char, fmt::detail::specs_checker<fmt... (1 times, avg 7 ms)
+     5 ms: fmt::format<std::basic_string_view<char> &> (1 times, avg 5 ms)
+     4 ms: __gnu_cxx::__to_xstring<std::basic_string<wchar_t>, wchar_t> (1 times, avg 4 ms)
+     4 ms: std::basic_string<char8_t>::_M_construct<const char8_t *> (2 times, avg 2 ms)
+     4 ms: std::basic_string<char16_t>::_M_construct<const char16_t *> (2 times, avg 2 ms)
+     4 ms: std::basic_string<char32_t>::_M_construct<const char32_t *> (2 times, avg 2 ms)
+     4 ms: std::basic_string<wchar_t>::_M_construct<wchar_t *> (2 times, avg 2 ms)
+     3 ms: fmt::make_format_args<fmt::basic_format_context<fmt::appender, char>... (1 times, avg 3 ms)
+     3 ms: __gnu_cxx::char_traits<char32_t>::move (1 times, avg 3 ms)
+     3 ms: std::uninitialized_copy<int *, int *> (1 times, avg 3 ms)
+     3 ms: __gnu_cxx::char_traits<char32_t>::copy (1 times, avg 3 ms)
+     3 ms: __gnu_cxx::char_traits<char>::move (1 times, avg 3 ms)
+     3 ms: std::copy<const char32_t *, char32_t *> (1 times, avg 3 ms)
+     3 ms: std::basic_string<char8_t>::basic_string (1 times, avg 3 ms)
+     3 ms: __gnu_cxx::char_traits<char>::copy (1 times, avg 3 ms)
+     3 ms: __gnu_cxx::char_traits<wchar_t>::move (1 times, avg 3 ms)
+     3 ms: __gnu_cxx::char_traits<char8_t>::move (1 times, avg 3 ms)
+     3 ms: std::copy<const char *, char *> (1 times, avg 3 ms)
+     3 ms: __gnu_cxx::char_traits<char16_t>::move (1 times, avg 3 ms)
+     3 ms: std::__copy_move_a<false, const char32_t *, char32_t *> (1 times, avg 3 ms)
+     3 ms: __gnu_cxx::char_traits<wchar_t>::copy (1 times, avg 3 ms)
+     3 ms: __gnu_cxx::char_traits<char8_t>::copy (1 times, avg 3 ms)
+     3 ms: std::basic_string<wchar_t>::basic_string<wchar_t *, void> (1 times, avg 3 ms)
+     2 ms: std::copy<const wchar_t *, wchar_t *> (1 times, avg 2 ms)
+     2 ms: std::copy<const char8_t *, char8_t *> (1 times, avg 2 ms)
+     2 ms: __gnu_cxx::char_traits<char16_t>::copy (1 times, avg 2 ms)
+
+**** Template sets that took longest to instantiate:
+    22 ms: fmt::basic_format_string<$>::basic_format_string<$> (1 times, avg 22 ms)
+    19 ms: fmt::detail::format_string_checker<$>::format_string_checker (1 times, avg 19 ms)
+    19 ms: fmt::detail::parse_format_specs<$> (1 times, avg 19 ms)
+    18 ms: std::copy<$> (8 times, avg 2 ms)
+    16 ms: __gnu_cxx::char_traits<$>::move (5 times, avg 3 ms)
+    15 ms: std::__copy_move_a<$> (6 times, avg 2 ms)
+    15 ms: __gnu_cxx::char_traits<$>::copy (5 times, avg 3 ms)
+    12 ms: std::common_reference<$> (19 times, avg 0 ms)
+    12 ms: std::basic_string<$>::_M_construct<$> (7 times, avg 1 ms)
+    11 ms: fmt::formatter<$>::parse<$> (1 times, avg 11 ms)
+    11 ms: std::basic_string<$>::_M_construct_aux<$> (7 times, avg 1 ms)
+    11 ms: std::basic_string<$> (5 times, avg 2 ms)
+    10 ms: std::basic_string<$>::basic_string (5 times, avg 2 ms)
+     7 ms: std::__and_<$> (9 times, avg 0 ms)
+     7 ms: std::__copy_move_a1<$> (6 times, avg 1 ms)
+     7 ms: std::__copy_move_a2<$> (6 times, avg 1 ms)
+     6 ms: std::__niter_base<$> (11 times, avg 0 ms)
+     6 ms: __gnu_cxx::__to_xstring<$> (2 times, avg 3 ms)
+     6 ms: std::is_nothrow_copy_constructible<$> (11 times, avg 0 ms)
+     5 ms: std::uninitialized_copy<$> (3 times, avg 1 ms)
+     5 ms: fmt::format<$> (1 times, avg 5 ms)
+     5 ms: std::basic_string<$>::basic_string<$> (3 times, avg 1 ms)
+     4 ms: std::is_nothrow_destructible<$> (7 times, avg 0 ms)
+     4 ms: std::__detail::__cyl_bessel_j<$> (2 times, avg 2 ms)
+     4 ms: __gnu_cxx::__stoa<$> (7 times, avg 0 ms)
+     4 ms: std::__common_ref_impl<$> (6 times, avg 0 ms)
+     3 ms: fmt::make_format_args<$> (1 times, avg 3 ms)
+     3 ms: std::__detail::__cyl_bessel_i<$> (2 times, avg 1 ms)
+     3 ms: std::__copy_move<$>::__copy_m<$> (5 times, avg 0 ms)
+     3 ms: std::__detail::__bessel_jn<$> (2 times, avg 1 ms)
+
+**** Functions that took longest to compile:
+     3 ms: service_template::SayHelloTo[abi:cxx11](std::basic_string_view<char,... (/output/optimized/service_template/src/greeting.cpp)
+     1 ms: fmt::v8::format_arg_store<fmt::v8::basic_format_context<fmt::v8::app... (/output/optimized/service_template/src/greeting.cpp)
+     1 ms: fmt::v8::detail::value<fmt::v8::basic_format_context<fmt::v8::append... (/output/optimized/service_template/src/greeting.cpp)
+     1 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (/output/optimized/service_template/src/greeting.cpp)
+     1 ms: void std::__cxx11::basic_string<char, std::char_traits<char>, std::a... (/output/optimized/service_template/src/greeting.cpp)
+     0 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (/output/optimized/service_template/src/greeting.cpp)
+     0 ms: __gnu_cxx::char_traits<char>::length(char const*) (/output/optimized/service_template/src/greeting.cpp)
+     0 ms: std::__cxx11::basic_string<char, std::char_traits<char>, std::alloca... (/output/optimized/service_template/src/greeting.cpp)
+     0 ms: fmt::v8::basic_string_view<char> fmt::v8::to_string_view<char, 0>(st... (/output/optimized/service_template/src/greeting.cpp)
+     0 ms: fmt::v8::basic_string_view<char>::basic_string_view<std::basic_strin... (/output/optimized/service_template/src/greeting.cpp)
+
+**** Function sets that took longest to compile / optimize:
+     3 ms: service_template::SayHelloTo[abi:cxx11](std::basic_string_view<$>, s... (1 times, avg 3 ms)
+     1 ms: fmt::v8::format_arg_store<$> fmt::v8::make_format_args<$>(std::basic... (1 times, avg 1 ms)
+     1 ms: fmt::v8::detail::value<$> fmt::v8::detail::make_arg<$>(std::basic_st... (1 times, avg 1 ms)
+     1 ms: std::__cxx11::basic_string<$> fmt::v8::format<$>(fmt::v8::basic_form... (1 times, avg 1 ms)
+     1 ms: void std::__cxx11::basic_string<$>::_M_construct<$>(char const*, cha... (1 times, avg 1 ms)
+     0 ms: std::__cxx11::basic_string<$>::basic_string<$>(char const*, std::all... (1 times, avg 0 ms)
+     0 ms: __gnu_cxx::char_traits<$>::length(char const*) (1 times, avg 0 ms)
+     0 ms: std::__cxx11::basic_string<$>::_M_set_length(unsigned long) (1 times, avg 0 ms)
+     0 ms: fmt::v8::basic_string_view<$> fmt::v8::to_string_view<$>(std::basic_... (1 times, avg 0 ms)
+     0 ms: fmt::v8::basic_string_view<$>::basic_string_view<$>(std::basic_strin... (1 times, avg 0 ms)
+
+**** Expensive headers:
+373 ms: /usr/include/fmt/format.h (included 1 times, avg 373 ms), included via:
+  1x: <direct include>
+
+328 ms: /output/optimized/service_template/src/greeting.hpp (included 1 times, avg 328 ms), included via:
+  1x: <direct include>
+
+6 ms: /usr/include/userver/utils/assert.hpp (included 1 times, avg 6 ms), included via:
+  1x: <direct include>
+
+  done in 0.0s.

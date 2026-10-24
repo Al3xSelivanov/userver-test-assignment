@@ -1,0 +1,36 @@
+Change Dir: '/output/build-baseline'
+
+Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile -j4 service_template_objs
+/usr/bin/cmake -S/output/baseline/service_template -B/output/build-baseline --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/gmake  -f CMakeFiles/Makefile2 service_template_objs
+gmake[1]: Entering directory '/output/build-baseline'
+/usr/bin/cmake -S/output/baseline/service_template -B/output/build-baseline --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /output/build-baseline/CMakeFiles 11
+/usr/bin/gmake  -f CMakeFiles/Makefile2 CMakeFiles/service_template_objs.dir/all
+gmake[2]: Entering directory '/output/build-baseline'
+/usr/bin/gmake  -f CMakeFiles/service_template_proto.dir/build.make CMakeFiles/service_template_proto.dir/depend
+gmake[3]: Entering directory '/output/build-baseline'
+cd /output/build-baseline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /output/baseline/service_template /output/baseline/service_template /output/build-baseline /output/build-baseline /output/build-baseline/CMakeFiles/service_template_proto.dir/DependInfo.cmake "--color=" service_template_proto
+gmake[3]: Leaving directory '/output/build-baseline'
+/usr/bin/gmake  -f CMakeFiles/service_template_proto.dir/build.make CMakeFiles/service_template_proto.dir/build
+gmake[3]: Entering directory '/output/build-baseline'
+gmake[3]: Nothing to be done for 'CMakeFiles/service_template_proto.dir/build'.
+gmake[3]: Leaving directory '/output/build-baseline'
+[ 54%] Built target service_template_proto
+/usr/bin/gmake  -f CMakeFiles/service_template_objs.dir/build.make CMakeFiles/service_template_objs.dir/depend
+gmake[3]: Entering directory '/output/build-baseline'
+cd /output/build-baseline && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /output/baseline/service_template /output/baseline/service_template /output/build-baseline /output/build-baseline /output/build-baseline/CMakeFiles/service_template_objs.dir/DependInfo.cmake "--color=" service_template_objs
+gmake[3]: Leaving directory '/output/build-baseline'
+/usr/bin/gmake  -f CMakeFiles/service_template_objs.dir/build.make CMakeFiles/service_template_objs.dir/build
+gmake[3]: Entering directory '/output/build-baseline'
+[ 63%] Building CXX object CMakeFiles/service_template_objs.dir/src/greeting.cpp.o
+/usr/bin/clang++ -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_ENABLE_ASSERT_HANDLER -DBOOST_LOCALE_DYN_LINK -DBOOST_STACKTRACE_BACKTRACE_DYN_LINK -DBOOST_STACKTRACE_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DBSON_STATIC -DGRPC_ASAN_SUPPRESSED -DGRPC_TSAN_SUPPRESSED -DMOODYCAMEL_NO_THREAD_LOCAL -DPIC=1 -DUSERVER=1 -DUSERVER_NAMESPACE=userver -DUSERVER_NAMESPACE_BEGIN="namespace userver { inline namespace v3_3_rc { " -DUSERVER_NAMESPACE_END="} }" -D_GLIBCXX_ASSERTIONS -I/output/baseline/service_template/src -isystem /usr/include/userver/third_party -isystem /usr/include/libbson-1.0 -isystem /output/build-baseline/proto -isystem /usr/include/c++/11 -isystem /usr/include/x86_64-linux-gnu/c++/11 -isystem /usr/include/c++/11/backward -isystem /usr/lib/llvm-14/lib/clang/14.0.0/include -isystem /usr/local/include -isystem /usr/include/x86_64-linux-gnu -isystem /usr/include -ftime-trace -g -std=c++20 -fvisibility-inlines-hidden -pipe -g -fPIC -ftime-trace -fdata-sections -ffunction-sections -gz -fno-omit-frame-pointer -fsanitize=undefined -fno-sanitize-recover=undefined -fsanitize=address -static-libsan -fsanitize-blacklist=/usr/lib/cmake/userver/sanitize.blacklist.txt -mcx16 -Wall -Wextra -Wpedantic -ftemplate-backtrace-limit=0 -Wdisabled-optimization -Winvalid-pch -Wimplicit-fallthrough -Wlogical-op -Wformat=2 -Wno-error=deprecated-declarations -Wno-useless-cast -Wno-psabi -fmacro-prefix-map=/app/userver/build_debug/= -fmacro-prefix-map=/app/= -Wno-unused-parameter -MD -MT CMakeFiles/service_template_objs.dir/src/greeting.cpp.o -MF CMakeFiles/service_template_objs.dir/src/greeting.cpp.o.d -o CMakeFiles/service_template_objs.dir/src/greeting.cpp.o -c /output/baseline/service_template/src/greeting.cpp
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wno-useless-cast' [-Wunknown-warning-option]
+2 warnings generated.
+gmake[3]: Leaving directory '/output/build-baseline'
+[100%] Built target service_template_objs
+gmake[2]: Leaving directory '/output/build-baseline'
+/usr/bin/cmake -E cmake_progress_start /output/build-baseline/CMakeFiles 0
+gmake[1]: Leaving directory '/output/build-baseline'
+
